@@ -7,8 +7,6 @@ var generateBreedNumberData = function () {
     initAgents().then(function() {
       runYear();
       for (i = 0; i < 15; i++) {
-        console.log(currentAgents);
-        console.log(brandFactor);
         advanceYear();
       }
       console.log(resultData);
@@ -20,6 +18,7 @@ var generateBreedNumberData = function () {
 var initAgents = function() {
   return new Promise(function(resolve, reject) {
     d3.csv(csvFileLocation, function(data) {
+      console.log(data);
       currentAgents = data;
       for (var agentNum = 0; agentNum < currentAgents.length; agentNum++) {
         currentAgents[agentNum].Second_Last_Breed = currentAgents[agentNum].Agent_Breed;

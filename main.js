@@ -19,4 +19,10 @@ var printCSVDataset = function() {
     return rowObject.Agent_Breed + " " + rowObject.Policy_ID + " " + rowObject.Auto_Renew;
   });
 }
-initBreedNumberGraph();
+
+var generateResults = function() {
+  brandFactor = document.getElementById('input1').value;
+  generateBreedNumberData().then(function() {
+    initBreedNumberGraph();
+  });
+}

@@ -7,7 +7,7 @@
  */
 var generateLineChart = function (numLines, data, labels) {
   var svg = d3.select("#lineChartSVG");
-
+  
   xScale = d3.scale.linear().range([margin.left, width - margin.right]).domain([0, 15]),
   yScale = d3.scale.linear().range([height - margin.top, margin.bottom]).domain([0, 3000]),
   xAxis = d3.svg.axis()

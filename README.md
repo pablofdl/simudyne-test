@@ -1,3 +1,4 @@
+Test Description
 
 Run for 15 Years
 Every Year:,Increment Age
@@ -12,3 +13,10 @@ Output:
 # of Breed_C Lost (Switched to Breed_NC)
 # of Breed_C Gained (Switch from Breed_NC)
 # of Breed_C Regained (Switched to NC, then back to C)
+
+
+Run Instructions
+
+1. Open index.html in Firefox (Chrome has problems reading the local .csv)
+2. Set your Brand Factor
+3. Click Generate Results

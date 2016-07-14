@@ -10,7 +10,7 @@ var i = -1;
 var generateBreedNumberData = function (years) {
   return new Promise(function(resolve, reject) {
     initAgents().then(function() {
-      runYear();
+      getYearResults();
       for (i = 0; i < years; i++) {
         advanceYear();
       }
@@ -57,14 +57,14 @@ var advanceYear = function () {
       }
     }
   };
-  runYear();
+  getYearResults();
 }
 
 /**
  * Generates the result for the current year
  *
  */
-var runYear = function() {
+var getYearResults = function() {
   var contBreed = {'Breed_NC' : 0, 'Breed_C' : 0};
   var contBreed_C_Lost = 0;
   var contBreed_C_Gained = 0;

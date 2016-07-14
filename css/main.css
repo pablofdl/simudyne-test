@@ -8,6 +8,7 @@ body {
 
 rect {
   fill-opacity: .6;
+    stroke-width: 2;
 }
 
 text {
@@ -30,6 +31,8 @@ form {
 .legend {
   font-size: 12px;
 }
-rect {
-  stroke-width: 2;
+
+.error {
+  color: red;
+  display: none;
 }

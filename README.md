@@ -1,4 +1,4 @@
-Test Description
+# Test Description
 
 Run for 15 Years
 Every Year:,Increment Age
@@ -9,13 +9,13 @@ If Breed_C,Switch to Breed_NC if Affinity < (Social_Grade * Attribute_Brand)
 If Breed_NC,Switch to Breed_C if Affinity < (Social_Grade * Attribute_Brand * Brand_Factor)
 
 Output:
-# of Agents in each Breed (At every Year)
-# of Breed_C Lost (Switched to Breed_NC)
-# of Breed_C Gained (Switch from Breed_NC)
-# of Breed_C Regained (Switched to NC, then back to C)
+Number of Agents in each Breed (At every Year)
+Number of Breed_C Lost (Switched to Breed_NC)
+Number of Breed_C Gained (Switch from Breed_NC)
+Number of Breed_C Regained (Switched to NC, then back to C)
 
 
-Run Instructions
+# Run Instructions
 
 1. Open index.html in Firefox (Chrome has problems reading the local .csv)
 2. Set your Brand Factor
